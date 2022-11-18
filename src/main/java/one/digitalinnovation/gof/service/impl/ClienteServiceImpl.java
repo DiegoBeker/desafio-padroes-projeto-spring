@@ -65,6 +65,7 @@ public class ClienteServiceImpl implements ClienteService {
 
 	@Override
 	public void calculaImpostos(Double mensal,Cliente cliente) {
+		cliente.setSalario(new Salario());
 		cliente.getSalario().getImpostos().add(new Fgts());
 		cliente.getSalario().getImpostos().add(new Inss());
 		cliente.getSalario().setMensal(mensal);
