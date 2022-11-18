@@ -1,10 +1,6 @@
 package one.digitalinnovation.gof.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity
 public class Cliente {
@@ -15,6 +11,8 @@ public class Cliente {
 	private String nome;
 	@ManyToOne
 	private Endereco endereco;
+	@Embedded
+	private Salario salario;
 
 	public Long getId() {
 		return id;
@@ -40,4 +38,11 @@ public class Cliente {
 		this.endereco = endereco;
 	}
 
+	public Salario getSalario() {
+		return salario;
+	}
+
+	public void setSalario(Salario salario) {
+		this.salario = salario;
+	}
 }

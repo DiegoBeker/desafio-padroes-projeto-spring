@@ -21,4 +21,5 @@ public interface ClienteService {
 
 	void deletar(Long id);
 
+    void calculaImpostos(Double mensal,Cliente cliente);
 }

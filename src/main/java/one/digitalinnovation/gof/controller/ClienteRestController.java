@@ -55,4 +55,10 @@ public class ClienteRestController {
 		clienteService.deletar(id);
 		return ResponseEntity.ok().build();
 	}
+
+	@PostMapping ("/impostos/{mensal}")
+	public ResponseEntity<Cliente> salvarCalculandoImpostos(@PathVariable Double mensal, @RequestBody Cliente cliente) {
+		clienteService.calculaImpostos(mensal,cliente);
+		return ResponseEntity.ok(cliente);
+	}
 }

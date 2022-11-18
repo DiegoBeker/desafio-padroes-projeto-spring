@@ -2,13 +2,10 @@ package one.digitalinnovation.gof.service.impl;
 
 import java.util.Optional;
 
+import one.digitalinnovation.gof.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import one.digitalinnovation.gof.model.Cliente;
-import one.digitalinnovation.gof.model.ClienteRepository;
-import one.digitalinnovation.gof.model.Endereco;
-import one.digitalinnovation.gof.model.EnderecoRepository;
 import one.digitalinnovation.gof.service.ClienteService;
 import one.digitalinnovation.gof.service.ViaCepService;
 
@@ -64,6 +61,14 @@ public class ClienteServiceImpl implements ClienteService {
 	public void deletar(Long id) {
 		// Deletar Cliente por ID.
 		clienteRepository.deleteById(id);
+	}
+
+	@Override
+	public void calculaImpostos(Double mensal,Cliente cliente) {
+		cliente.getSalario().getImpostos().add(new Fgts());
+		cliente.getSalario().getImpostos().add(new Inss());
+		cliente.getSalario().setMensal(mensal);
+		salvarClienteComCep(cliente);
 	}
 
 	private void salvarClienteComCep(Cliente cliente) {
