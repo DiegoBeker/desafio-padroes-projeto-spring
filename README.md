@@ -8,7 +8,7 @@ Repositório com as implementações dos padrões de projeto explorados no Lab "
 
 <h3>Diagrama de Classes</h3>
 
-![Observer-UML](https://user-images.githubusercontent.com/114487600/202730968-e9b5af00-de30-438a-a254-1ff87765577c.png)
+![Observer-UML](https://user-images.githubusercontent.com/114487600/202737151-83267e0f-5a0e-4f0d-abcf-3a67dc518b07.png)
 
 <h3>Swagger</h3>
 
