@@ -11,6 +11,7 @@ Repositório com as implementações dos padrões de projeto explorados no Lab "
 <table>
 <tr>
 	<th>Tool</th>
+	<th>Version</th>
 </tr>
 <tr>
 	<td>Java JDK</td>
@@ -31,7 +32,6 @@ Repositório com as implementações dos padrões de projeto explorados no Lab "
 <table>
 <tr>
 	<th>Dependencie</th>
-	<th>Version</th>
 </tr>
 <tr>
 	<td>spring-boot-starter-data-jpa</td>
