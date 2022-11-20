@@ -6,15 +6,63 @@ Repositório com as implementações dos padrões de projeto explorados no Lab "
 - Facade
 - Observer(As Classes Inss e Fgts são observadores, a classe Salario tem seu atributo mensal observado)
 
+<table>
+<tr>
+	<th>Tool</th>
+	<th>Version</th>
+</tr>
+<tr>
+	<td>Java JDK</td>
+	<td>17</td>
+</tr>
+<tr>
+	<td>Git</td>
+	<td>2.**</td>
+</tr>
+<tr>
+	<td>Maven</td>
+	<td>4.0.0</td>
+</tr>
+</table>
+
+<h3>Dependencies</h3>
+
+<table>
+<tr>
+	<th>Dependencie</th>
+	<th>Version</th>
+</tr>
+<tr>
+	<td>spring-boot-starter-data-jpa</td>
+</tr>
+<tr>
+	<td>spring-boot-starter-web</td>
+</tr>
+<tr>
+	<td>spring-cloud-starter-openfeign</td>
+</tr>
+<tr>
+	<td>springdoc-openapi-ui</td>
+</tr>
+<tr>
+	<td>h2</td>
+</tr>
+<tr>
+	<td>spring-boot-starter-test</td>
+</tr>
+
+
+</table>
+
 <h3>Diagrama de Classes</h3>
 
-![Observer-UML](https://user-images.githubusercontent.com/114487600/202737151-83267e0f-5a0e-4f0d-abcf-3a67dc518b07.png)
+![Observer-UML](https://user-images.githubusercontent.com/114487600/202929203-db651389-8588-4bdf-88c4-274d24ec2112.png)
 
 <h3>Swagger</h3>
 
 ![image](https://user-images.githubusercontent.com/114487600/202733003-825e0a26-0627-49dd-ba6e-b4e8bb622cfb.png)
 
-Padrão Observer
+Padrão Observer Funcionando
 
 ![image](https://user-images.githubusercontent.com/114487600/202733331-1e203314-060e-48ee-8688-3e4bb5b23c1d.png)
 
