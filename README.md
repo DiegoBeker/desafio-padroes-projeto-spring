@@ -6,10 +6,11 @@ Repositório com as implementações dos padrões de projeto explorados no Lab "
 - Facade
 - Observer(As Classes Inss e Fgts são observadores, a classe Salario tem seu atributo mensal observado)
 
+<h3>Ferramentas</h3>
+
 <table>
 <tr>
 	<th>Tool</th>
-	<th>Version</th>
 </tr>
 <tr>
 	<td>Java JDK</td>
